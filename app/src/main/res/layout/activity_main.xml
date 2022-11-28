@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    tools:context=".MainActivity"
+    android:background="@drawable/img"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        tools:layout_editor_absoluteY="-91dp"
+        tools:layout_editor_absoluteX="0dp"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textAlignment="center"
+        android:text="AREA CALCULATOR"
+        android:gravity="center_horizontal"
+        android:id="@+id/textView"/>
+
+    <TextView
+        android:layout_height="42dp"
+        android:layout_width="126dp"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textAlignment="center"
+        android:text="Width"
+        android:gravity="center_horizontal"
+        android:id="@+id/width_field"
+        app:layout_constraintVertical_bias="0.147"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:layout_height="53dp"
+        android:layout_width="126dp"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textAlignment="center"
+        android:text="Height"
+        android:gravity="center_horizontal"
+        android:id="@+id/Height_Field"
+        app:layout_constraintVertical_bias="0.291"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:layout_height="47dp"
+        android:layout_width="126dp"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textAlignment="center"
+        android:text="Radius"
+        android:gravity="center_horizontal"
+        android:id="@+id/Radius_Field"
+        app:layout_constraintVertical_bias="0.434"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        tools:layout_editor_absoluteY="98dp"
+        tools:layout_editor_absoluteX="166dp"
+        android:id="@+id/editTextNumberDecimal"
+        tools:ignore="MissingConstraints"
+        android:inputType="numberDecimal"
+        android:ems="10"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        tools:layout_editor_absoluteY="205dp"
+        tools:layout_editor_absoluteX="166dp"
+        android:id="@+id/editTextNumberDecimal2"
+        tools:ignore="MissingConstraints"
+        android:inputType="numberDecimal"
+        android:ems="10"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        tools:layout_editor_absoluteY="299dp"
+        tools:layout_editor_absoluteX="166dp"
+        android:id="@+id/editTextNumberDecimal3"
+        tools:ignore="MissingConstraints"
+        android:inputType="numberDecimal"
+        android:ems="10"/>
+
+    <Spinner
+        android:layout_height="46dp"
+        android:layout_width="405dp"
+        tools:layout_editor_absoluteY="456dp"
+        tools:layout_editor_absoluteX="1dp"
+        android:id="@+id/spinner"
+        tools:ignore="MissingConstraints"/>
+
+    <TextView
+        android:id="@+id/textView_Result"
+        android:layout_width="141dp"
+        android:layout_height="39dp"
+        android:gravity="center_horizontal"
+        android:text="RESULT"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        app:layout_constraintVertical_bias="0.4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
